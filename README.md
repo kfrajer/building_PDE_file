@@ -78,20 +78,29 @@ C:.
 
 </pre>
 
-3. ```C:\Users\C\Documents\Processing\CMsketches\multiple_cube_rotations>processing-java
-      --force 
-     --sketch=C:\Users\C\Documents\Processing\CMsketches\multiple_cube_rotations 
-     --output=C:\Users\C\Documents\Processing\CMsketches\multiple_cube_rotations\tmpp 
-     --run```
+3. Run now: 
 
-**Note 3**: It creates tmpp/multiple_cube_rotations.class and tmpp/source/multiple_cube_rotations.java
+```Batchfile
+C:\Users\C\Documents\Processing\CMsketches\multiple_cube_rotations>processing-java 
+--force 
+--sketch=C:\Users\C\Documents\Processing\CMsketches\multiple_cube_rotations 
+--output=C:\Users\C\Documents\Processing\CMsketches\multiple_cube_rotations\tmpp  
+--run
+ ```
+
+
+**Note 3**: It creates `tmpp/multiple_cube_rotations.class` and `tmpp/source/multiple_cube_rotations.java`
 
 4. `cd application.windows64`
 
-5. `dir lib /a:a /w`
-core.jar  gluegen-rt-natives-windows-amd64.jar   gluegen-rt.jar  jogl-all-natives-windows-amd64.jar jogl-all.jar multiple_cube_rotations.jar
+5. List only files in wide format: `dir lib /a:a /w`
 
-6. `mkdir bin`
+```Batchfile
+core.jar  gluegen-rt-natives-windows-amd64.jar   gluegen-rt.jar  jogl-all-natives-windows-amd64.jar 
+jogl-all.jar multiple_cube_rotations.jar
+```
+
+6. Execute `mkdir bin`
 
 7. `javac -d bin -sourcepath source -cp lib/core.jar;lib/gluegen-rt-natives-windows-amd64.jar;lib/gluegen-rt.jar;lib/jogl-all-natives-windows-amd64.jar;lib/jogl-all.jar source/multiple_cube_rotations.java`
 
