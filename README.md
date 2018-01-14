@@ -3,7 +3,7 @@
 
 ## SUMMARY:
 This repo capture the commands required to build and execute a pde file by building and executing
-the java file version of the pde and using the core.jar (and associated libs) inthe class path.
+the java file version of the pde and using the core.jar (and associated libs) in the class path.
 
 
 ## REFERENCE:
@@ -46,11 +46,11 @@ https://github.com/processing/processing/wiki/Command-Line
 ## EXAMPLE:  Relevant commands
 
 1.  `cd C:\Users\C\Documents\Processing\CMsketches\multiple_cube_rotations>`
-2.  Now open in **Processing** and export it. The command tree produces (omitting some files): 
+2.  Now open in **Processing** and export it. The command tree produces (omitting some files + folders): 
 
 <pre>
 Folder PATH listing for volume Windows8_OS
-Volume serial number is 4E33-E988
+Volume serial number is xxxx-yyyy
 C:.
 +---application.windows64   <-----Produced (mostly) by [2]
 ¦   +---bin                 <-----Produced by [6]
@@ -113,7 +113,7 @@ Note: Recompile with -Xlint:deprecation for details.
 
 8. `java -cp bin;lib/core.jar;lib/gluegen-rt-natives-windows-amd64.jar;lib/gluegen-rt.jar;lib/jogl-all-natives-windows-amd64.jar;lib/jogl-all.jar multiple_cube_rotations`
 
-**Note 8**: it launches the application (Tested on Windows 10 on 14-Jan-2018)
+**Note 8**: it launches the application (Tested on Windows 10 x64, P3.3.6 on 14-Jan-2018)
 
 
 ## Bugs and Issues
